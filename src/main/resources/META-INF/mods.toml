@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+issueTrackerURL="https://github.com/fallOut015/entomology/issues" #optional
+[[mods]] #mandatory
+modId="witchcraft" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Witchcraft" #mandatory
+updateJSONURL="https://raw.githubusercontent.com/fallOut015/entomology/main/src/main/resources/updates.json" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/entomology" #optional
+logoFile="witchcraft.png" #optional
+credits="Tutorial guys, Forge people, and my friends" #optional
+authors="fallOut015" #optional
+description='''
+Adds crystals.
+'''
+[[dependencies.entomology]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.entomology]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
