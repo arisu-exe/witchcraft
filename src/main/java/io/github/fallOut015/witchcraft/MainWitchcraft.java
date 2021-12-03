@@ -3,7 +3,7 @@ package io.github.fallOut015.witchcraft;
 import io.github.fallOut015.witchcraft.world.level.block.BlocksWitchcraft;
 import io.github.fallOut015.witchcraft.client.registry.BlockEntityRenderersWitchcraft;
 import io.github.fallOut015.witchcraft.client.renderer.ItemBlockRenderTypesWitchcraft;
-import io.github.fallOut015.witchcraft.world.item.ItemsEntomology;
+import io.github.fallOut015.witchcraft.world.item.ItemsWitchcraft;
 import io.github.fallOut015.witchcraft.world.level.block.entity.BlockEntitiesWitchcraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -18,7 +18,7 @@ public class MainWitchcraft {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         BlocksWitchcraft.register(FMLJavaModLoadingContext.get().getModEventBus());
-        ItemsEntomology.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ItemsWitchcraft.register(FMLJavaModLoadingContext.get().getModEventBus());
         BlockEntitiesWitchcraft.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
